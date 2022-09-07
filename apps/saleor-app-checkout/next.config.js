@@ -23,7 +23,7 @@ const config = withTM({
   },
   images: { domains: ["localhost"] },
   experimental: {
-    esmExternals: false,
+    esmExternals: "loose",
   },
   eslint: {
     dirs: ["pages", "backend", "frontend", "config"],
