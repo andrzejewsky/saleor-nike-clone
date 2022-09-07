@@ -6,7 +6,7 @@ import {
   getSaleorAmountFromInteger,
   getTransactionAmountGetter,
 } from "@/saleor-app-checkout/backend/payments/utils";
-import { assertUnreachable } from "checkout-common";
+import { assertUnreachable } from "@saleor/checkout-common";
 
 /**
  * https://stripe.com/docs/webhooks

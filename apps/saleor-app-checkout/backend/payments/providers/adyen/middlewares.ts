@@ -1,4 +1,4 @@
-import { adyenProviderSettingIDs } from "checkout-common";
+import { adyenProviderSettingIDs } from "@saleor/checkout-common";
 import { getPrivateSettings } from "@/saleor-app-checkout/backend/configuration/settings";
 import { envVars } from "@/saleor-app-checkout/constants";
 import { PrivateSettingsValues } from "@/saleor-app-checkout/types";

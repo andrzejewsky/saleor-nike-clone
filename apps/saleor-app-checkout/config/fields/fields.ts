@@ -5,7 +5,7 @@ import {
   PaymentProvider,
   PaymentProviderSettings,
   PaymentProviderID,
-} from "checkout-common";
+} from "@saleor/checkout-common";
 import {
   brandingCustomizationMessages,
   customizationMessages,

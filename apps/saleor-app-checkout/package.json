@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect --require env-vars' next dev -p 3001",
+    "dev": "NODE_OPTIONS='--inspect --require @saleor/env-vars' next dev -p 3001",
     "test": "jest",
     "test:record": "POLLY_MODE=record jest --runInBand --verbose",
     "build": "npm run i18n && next build",
@@ -30,7 +30,7 @@
     "@sentry/nextjs": "7.11.1",
     "@urql/exchange-auth": "^0.1.7",
     "@urql/exchange-multipart-fetch": "^0.1.14",
-    "checkout-common": "workspace:*",
+    "@saleor/checkout-common": "workspace:*",
     "clsx": "^1.1.1",
     "content-type": "^1.0.4",
     "crypto-js": "^4.1.1",
@@ -78,9 +78,7 @@
     "@types/setup-polly-jest": "^0.5.1",
     "babel-plugin-formatjs": "^10.3.18",
     "dotenv": "^16.0.1",
-    "env-vars": "workspace:*",
     "eslint": "^8.22.0",
-    "eslint-config-checkout": "workspace:*",
     "fast-check": "3.1.1",
     "headers-polyfill": "^3.0.9",
     "jest": "^27.5.1",
@@ -92,7 +90,9 @@
     "omit-deep-lodash": "^1.1.7",
     "setup-polly-jest": "^0.11.0",
     "ts-jest": "^27.1.4",
-    "tsconfig": "workspace:*",
+    "@saleor/env-vars": "workspace:*",
+    "eslint-config-checkout": "workspace:*",
+    "@saleor/tsconfig": "workspace:*",
     "typescript": "4.7.4"
   },
   "engines": {

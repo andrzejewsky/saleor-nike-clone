@@ -1,7 +1,7 @@
 import { getPrivateSettings } from "@/saleor-app-checkout/backend/configuration/settings";
 import { envVars } from "@/saleor-app-checkout/constants";
 import invariant from "ts-invariant";
-import { assertUnreachable } from "checkout-common";
+import { assertUnreachable } from "@saleor/checkout-common";
 import { ReuseExistingVendorSessionFn } from "../../types";
 import { getStripeClient } from "./stripeClient";
 

@@ -1,4 +1,4 @@
-import "env-vars";
+import "@saleor/env-vars";
 
 process.env.SETTINGS_ENCRYPTION_SECRET = "test_salt"; // Change will affect tests fixtures
 process.env.SALEOR_APP_TOKEN = "TEST";

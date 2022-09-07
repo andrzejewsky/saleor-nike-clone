@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/react-library.json",
+  "extends": "@saleor/tsconfig/react-library.json",
   "include": ["src", "types.d.ts"],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {

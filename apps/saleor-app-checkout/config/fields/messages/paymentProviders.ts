@@ -3,7 +3,7 @@ import {
   MollieProviderSettingID,
   PaymentProviderID,
   StripeProviderSettingID,
-} from "checkout-common";
+} from "@saleor/checkout-common";
 import { defineMessages } from "react-intl";
 
 export const paymentProvidersMessages = defineMessages<PaymentProviderID>({

@@ -4,7 +4,7 @@ import {
   PayRequestBody,
   PaymentStatusResponse,
   ChannelActivePaymentProvidersByChannel,
-} from "checkout-common";
+} from "@saleor/checkout-common";
 import { PayResult } from "./types";
 import urlJoin from "url-join";
 

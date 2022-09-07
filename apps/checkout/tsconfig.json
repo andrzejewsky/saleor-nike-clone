@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/nextjs.json",
+  "extends": "@saleor/tsconfig/nextjs.json",
   "compilerOptions": {
     "target": "ES2021",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

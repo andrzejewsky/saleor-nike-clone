@@ -61,7 +61,7 @@
     "check-types": {
       "outputs": []
     },
-    "generate": {
+    "codegen": {
       "outputs": [
         "graphql/index.ts",
         "graphql.schema.json",

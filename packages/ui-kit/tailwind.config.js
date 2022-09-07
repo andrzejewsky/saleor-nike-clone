@@ -23,7 +23,7 @@ const theme = {
       tertiary: "#EEF1F7",
     },
     text: {
-      primary: "#394052",
+      primary: "#C1C1C1",
       secondary: "#8A919F",
       tertiary: "#EEF1F7",
       error: "#B65757",
@@ -32,7 +32,7 @@ const theme = {
       disabled: "rgba(57, 64, 82, 0.4)",
     },
     button: {
-      primary: "#394052",
+      primary: "#111",
       secondary: "#FFFFFF",
       tertiary: "rgba(57, 64, 82, 0.15)",
       quaternary: "#EEF1F7",
@@ -68,7 +68,7 @@ const theme = {
     },
   },
   fontFamily: {
-    sans: ["Inter"],
+    sans: ['"Helvetica Neue"'],
   },
   spacing: {
     px: "1px",

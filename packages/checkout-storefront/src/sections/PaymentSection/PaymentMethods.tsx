@@ -1,7 +1,7 @@
 import { MessageKey, useFormattedMessages } from "@/checkout-storefront/hooks/useFormattedMessages";
 import React from "react";
 import { camelCase } from "lodash-es";
-import { PaymentMethodID } from "checkout-common";
+import { PaymentMethodID } from "@saleor/checkout-common";
 import { SelectBoxGroup } from "@/checkout-storefront/components/SelectBoxGroup";
 import { SelectBox } from "@/checkout-storefront/components/SelectBox";
 import { Text } from "@saleor/ui-kit";

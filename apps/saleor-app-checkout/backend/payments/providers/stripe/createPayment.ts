@@ -2,7 +2,7 @@ import { CreatePaymentData, CreatePaymentResult } from "../../types";
 import Stripe from "stripe";
 import { OrderFragment } from "@/saleor-app-checkout/graphql";
 import { formatRedirectUrl, getIntegerAmountFromSaleor } from "../../utils";
-import { PaymentMethodID } from "checkout-common";
+import { PaymentMethodID } from "@saleor/checkout-common";
 import { getStripeClient } from "./stripeClient";
 
 export const createStripePayment = async ({

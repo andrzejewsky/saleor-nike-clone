@@ -12,7 +12,11 @@ import {
   UnknownPublicSettingsValues,
 } from "types/api";
 import { Customization, CustomizationID, CustomizationSettings } from "types/common";
-import { PaymentProvider, PaymentProviderID, PaymentProviderSettings } from "checkout-common";
+import {
+  PaymentProvider,
+  PaymentProviderID,
+  PaymentProviderSettings,
+} from "@saleor/checkout-common";
 
 export const useCustomizationSettings = (
   settingsValues: UnknownPublicSettingsValues

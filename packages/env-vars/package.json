@@ -1,5 +1,5 @@
 {
-  "name": "env-vars",
+  "name": "@saleor/env-vars",
   "version": "0.0.1",
   "private": true,
   "description": "Env vars loader configuration for checkout monorepo",

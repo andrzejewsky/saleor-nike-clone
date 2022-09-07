@@ -10,11 +10,11 @@ import {
   PaymentMethods,
   PaymentProviderID,
   PaymentProviders,
-} from "checkout-common";
+} from "@saleor/checkout-common";
 import { OrderFragment } from "@/saleor-app-checkout/graphql";
 import { getOrderDetails } from "@/saleor-app-checkout/backend/payments/getOrderDetails";
 import { PayRequestResponse, PayRequestErrorResponse } from "@/saleor-app-checkout/types/api/pay";
-import { PayRequestBody } from "checkout-common";
+import { PayRequestBody } from "@saleor/checkout-common";
 import { allowCors, getBaseUrl } from "@/saleor-app-checkout/backend/utils";
 import { updatePaymentMetafield } from "@/saleor-app-checkout/backend/payments/updatePaymentMetafield";
 import { reuseExistingMollieSession } from "@/saleor-app-checkout/backend/payments/providers/mollie/verifySession";

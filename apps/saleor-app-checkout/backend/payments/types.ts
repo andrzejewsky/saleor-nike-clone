@@ -1,7 +1,7 @@
 import { OrderCreateFromCheckoutErrorCode, OrderFragment } from "@/saleor-app-checkout/graphql";
 import { OrderPaymentMetafield } from "@/saleor-app-checkout/types";
 import { PayRequestResponse } from "@/saleor-app-checkout/types/api/pay";
-import { PaymentMethodID, PaymentProviderID } from "checkout-common";
+import { PaymentMethodID, PaymentProviderID } from "@saleor/checkout-common";
 
 type InternalErrorCodes =
   | "COULD_NOT_CREATE_ORDER_FROM_CHECKOUT"

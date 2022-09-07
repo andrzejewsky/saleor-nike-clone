@@ -17,7 +17,7 @@
     "noImplicitReturns": false,
     "noUncheckedIndexedAccess": false
   },
-  "extends": "tsconfig/nextjs.json",
+  "extends": "@saleor/tsconfig/nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

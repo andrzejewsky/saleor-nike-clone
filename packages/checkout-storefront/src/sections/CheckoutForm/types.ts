@@ -1,4 +1,4 @@
-import { PaymentMethodID, PaymentProviderID } from "checkout-common";
+import { PaymentMethodID, PaymentProviderID } from "@saleor/checkout-common";
 
 export interface FormData {
   email: string;

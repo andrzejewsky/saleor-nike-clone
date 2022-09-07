@@ -1,0 +1,8 @@
+fragment ProductCardPriceRangeFragment on TaxedMoneyRange {
+  start {
+    ...TaxedPriceFragment
+  }
+  stop {
+    ...TaxedPriceFragment
+  }
+}

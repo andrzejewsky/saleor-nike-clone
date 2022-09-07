@@ -1,4 +1,9 @@
-import { IconComponent, PaymentMethodID, PaymentProviderID, SettingType } from "checkout-common";
+import {
+  IconComponent,
+  PaymentMethodID,
+  PaymentProviderID,
+  SettingType,
+} from "@saleor/checkout-common";
 
 export type SettingsType = "public" | "private";
 export const allPublicMetafieldID = ["customizationsCheckoutUrl"] as const;
