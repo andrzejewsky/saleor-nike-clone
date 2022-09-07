@@ -12,5 +12,6 @@
     "eslint-config-next": "^12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-formatjs": "^4.2.2"
-  }
+  },
+  "packageManager": "pnpm@7.5.2"
 }
