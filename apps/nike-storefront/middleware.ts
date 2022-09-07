@@ -9,7 +9,7 @@ export default function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  if (pathname.includes("_next") || pathname.includes(".jpg")) {
+  if (pathname.includes("_next") || pathname.includes(".jpg") || pathname.includes(".png")) {
     return NextResponse.next();
   }
 

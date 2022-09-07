@@ -25,14 +25,14 @@ export const useAddItem = () => {
       return;
     }
 
-    createCheckout({
+    const checkoutResponse = await createCheckout({
       variables: {
         channel,
         lines: [{ quantity: 1, variantId }],
       },
     });
 
-    const newCheckoutToken = createCheckoutState.data?.checkoutCreate?.checkout?.token;
+    const newCheckoutToken = checkoutResponse.data?.checkoutCreate?.checkout?.token;
 
     if (newCheckoutToken) {
       setCheckoutToken(newCheckoutToken);

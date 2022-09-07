@@ -26,7 +26,7 @@ interface CategoryPageContext extends ChannelContext {
 
 export const getStaticPaths: GetStaticPaths = () => ({
   paths: [],
-  fallback: "blocking",
+  fallback: true,
 });
 
 export const getStaticProps: GetStaticProps<CategoryPageProps, CategoryPageContext> = async (

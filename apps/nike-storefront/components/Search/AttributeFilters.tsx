@@ -1,4 +1,4 @@
-import type { FC, ChangeEventHandler } from "react";
+import { FC, ChangeEventHandler, useState } from "react";
 import type { Attribute, AttributeValue, FilteringAttributesQuery } from "@saleor-api";
 import { useFilterState } from "./useFilterState";
 import { useRouter } from "next/router";
@@ -14,6 +14,13 @@ interface FilterItemProps {
 }
 
 const FilterItem: FC<FilterItemProps> = ({ name, checked, onChange }) => {
+  const [isChecked, setIsChecked] = useState(checked);
+
+  const handleClick: ChangeEventHandler = (evt) => {
+    setIsChecked((p) => !p);
+    onChange(evt);
+  };
+
   return (
     <label htmlFor={name} className="flex items-start space-x-1">
       <input
@@ -21,8 +28,8 @@ const FilterItem: FC<FilterItemProps> = ({ name, checked, onChange }) => {
         id={name}
         name={name}
         className="w-5 h-5 accent-gray-800 shrink-0"
-        checked={checked}
-        onChange={onChange}
+        checked={isChecked}
+        onChange={handleClick}
       />
       <div className="leading-5">{name}</div>
     </label>

@@ -8,6 +8,7 @@ import { CheckoutProvider } from "@saleor-components/CheckoutProvider";
 import apolloClient from "@/lib/graphql";
 import { DefaultLayout } from "components/layout/Default";
 import type { FC } from "react";
+import NextNProgress from "nextjs-progressbar";
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -16,6 +17,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         <RegionsProvider>
           <SaleorProviderWithChannels>
             <DefaultLayout>
+              <NextNProgress />
               <Component {...pageProps} />
             </DefaultLayout>
           </SaleorProviderWithChannels>

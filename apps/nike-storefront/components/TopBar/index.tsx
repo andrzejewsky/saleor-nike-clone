@@ -1,9 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const TopBar = () => (
   <div className="bg-gray-100 px-16 py-2 flex justify-between text-sm">
-    <div>logo1</div>
-    <ul className="flex">
+    <div className="flex flex-nowrap space-x-2 items-center">
+      <div>
+        <Image src="/top-logo.png" width={30} height={30} />
+      </div>
+      <div>
+        <Image src="/top-logo2.png" width={30} height={30} />
+      </div>
+    </div>
+    <ul className="flex items-center">
       <li>
         <Link href="/">
           <a className="border-slate-400 border-r-2 pr-3">Help</a>

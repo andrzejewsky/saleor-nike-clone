@@ -30,9 +30,13 @@ const getIcon = (iconName: NavButtonProps["icon"]) => {
 
 export const NavButton: FC<NavButtonProps> = ({ icon, counter, ...rest }) => {
   return (
-    <button type="button" className="" {...rest}>
+    <button type="button" className="relative" {...rest}>
       {getIcon(icon)}
-      {!!counter && <span className="">{counter}</span>}
+      {!!counter && (
+        <span className="rounder bg-indigo-500 px-1.5 py-1 text-slate-50 rounded font-indigo text-[8px] absolute -right-2 -bottom-2">
+          {counter}
+        </span>
+      )}
     </button>
   );
 };
